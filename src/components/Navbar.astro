@@ -1,23 +1,41 @@
 <header class="container">
   <nav>
-    <a href="#">Download CV <span>↯</span></a>
+    <a href="#">Download CV <span class="arrow">↯</span></a>
   </nav>
 </header>
 
 <style lang="scss" scoped>
   @import '../styles/_variables.scss';
   header {
+    z-index: 1;
     nav {
       display: flex;
       justify-content: end;
       margin: 2.5rem 0 0 0;
       a {
+        display: inline-block;
         background-color: $violet;
         text-decoration: none;
         color: $black;
-        padding: .875rem 1.5rem;
+        padding: 1.4rem 2rem;
         border-radius: 99px;
         font-size: 1.1rem;
+        font-weight: 600;
+        transition: .5s;
+        .arrow {
+          margin-left: .4rem;
+        }
+        &:hover {
+          background-color: white;
+          outline: 1px solid $violet;
+          transition: .5s;
+          .arrow {
+            color: $violet;
+            font-weight: 700;
+            transform: translateY(5px);
+            transition: transform 0.3s ease;
+          }
+        }
       }
     }
   }

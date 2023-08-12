@@ -21,13 +21,10 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="light-effect">
-			<div class="light-beam"></div>
-		</div>
-		<!-- <div class="effect">
-			<div class="light-effect"></div>
-		</div> -->
 		<div class="pattern-container">
+			<div class="light-effect">
+				<div class="light-beam"></div>
+			</div>
 			<div class="background">
 				<span></span>
 				<span></span>
@@ -59,19 +56,19 @@ const { title } = Astro.props;
     width: 100vw;
     height: 200%;
     position: absolute;
-		left: 0%;
+		z-index: 1;
 	}
 
 	.light-beam {
 		width: 100%;
 		height: 100%;
-		background: radial-gradient(ellipse at center, rgba(19, 31, 51, 1) 5%, rgba(19, 31, 51, 0) 50%);
+		background: radial-gradient(ellipse at center, rgb(25, 41, 68) 5%, rgba(25, 41, 68, 0) 50%);
 		border-radius: 50%;
-		position: absolute;
+		position: relative;
 		top: -60%;
 		
 		transform: rotate(45deg);
-		// animation: flicker 5s infinite;
+		animation: flicker 10s infinite;
 	}
 
 	@keyframes flicker {

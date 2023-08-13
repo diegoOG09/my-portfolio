@@ -9,7 +9,7 @@ const { title } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="UTF-8"/>
 		<meta name="description" content="Astro description">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -46,7 +46,7 @@ const { title } = Astro.props;
 				<span></span>
 				<span></span>
 				<span></span>
-		 </div>
+		 	</div>
 		</div>
 		<slot />
 	</body>
@@ -66,7 +66,7 @@ const { title } = Astro.props;
 		border-radius: 50%;
 		position: relative;
 		top: -60%;
-		
+		left: -.5%;
 		transform: rotate(45deg);
 		animation: flicker 10s infinite;
 	}
@@ -85,12 +85,10 @@ const { title } = Astro.props;
 	
 	@font-face {
     font-family: 'google-sans';
-    src: url('../font/ProductSans-Regular.ttf') format('truetype'); /* Ajusta la ruta según tu estructura de carpetas y el tipo de archivo de la fuente */
-    /* Agrega otros formatos de fuente aquí si es necesario */
+    src: url('../font/ProductSans-Regular.ttf') format('truetype');
 	}
 	html {
-		background: #13151A;
-		background-size: 224px;
+		scroll-behavior: smooth;
 	}
 	.container {
 		margin: 0 auto;
@@ -101,11 +99,11 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 	body {
-		// font-family: 'Noto Sans Display', sans-serif;
 		font-family: 'google-sans', sans-serif;
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
+		overflow: scroll;
+		overflow-x: hidden;
 		background: transparent;
 	}
 	.pattern-container {
@@ -126,13 +124,13 @@ const { title } = Astro.props;
 	}
 
 	.background {
-			position: fixed;
-			width: 100vw;
-			height: 100vh;
-			top: 0;
-			left: 0;
-			background: #10151d;
-			overflow: hidden;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		background: #10151d;
+		overflow: hidden;
 	}
 
 	.background span {
@@ -328,6 +326,5 @@ const { title } = Astro.props;
 			transform-origin: 13vw 25vh;
 			box-shadow: 2vmin 0 0.5125429886528914vmin currentColor;
 	}
-
 
 </style>

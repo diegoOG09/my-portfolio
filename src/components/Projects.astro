@@ -1,3 +1,9 @@
+---
+import ProjectsView from "./ProjectsView.astro";
+import ProjectCard from "./ProjectCard.astro";
+import projectsItems from "../data/ProjectsItems";
+---
+
 <section class="container" id="projects">
   <div class="section-title">
     <div class="neon-circle">
@@ -12,9 +18,11 @@
   <div class="light-effect">
     <div class="light-beam"></div>
   </div>
-  <div class="projects-grid">
-    
-  </div>
+  <ProjectsView>
+    {
+      projectsItems.map(item => <ProjectCard {...item} />)
+    }
+  </ProjectsView>
 </section>
 
 <style lang="scss" scoped>
@@ -23,9 +31,10 @@
     color: $gray;
     .section-title {
       .neon-circle {
+        position: absolute;
+        z-index: 1;
         width: 100vw;
         height: 200%;
-        position: absolute;
         .neon-beam {
           width: 20%;
           height: 20%;
@@ -42,10 +51,10 @@
           top: 7.5%;
           left: 30%;
           transform: translate(-50%, -50%);
-          z-index: 0;
           filter: drop-shadow(5px 10px 10px #253141);
         }
       }
+      
     }
     .title {
       display: flex;

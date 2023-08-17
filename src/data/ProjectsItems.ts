@@ -18,10 +18,10 @@ const projectsItems : ProjectItem[] = [
   {
     image: '/assets/screenshots/analyze-this.png',
     title: 'Analyze This',
-    description: 'Web tool for analyze text, number of words, palindromes, etc.',
+    description: 'Web tool for analyze text, number of words, palindromes, etc. ',
     repoUrl: 'https://github.com/diegoOG09/analyze-this',
     websiteUrl: 'https://analyze-this.netlify.app/'
   }
 ]
 
-
+export default projectsItems;

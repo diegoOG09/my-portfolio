@@ -5,8 +5,8 @@ const { image, title, description, repoUrl, websiteUrl } = Astro.props
 ---
 
 <div class="project-card" id="project">
-  <div>
-    <img src={image} alt="">
+  <div class="project-img">
+    <img src={image} alt="Project image">
   </div>
   <div class="card-info">
     <h3>{title}</h3>
@@ -22,17 +22,23 @@ const { image, title, description, repoUrl, websiteUrl } = Astro.props
   @import '../styles/_variables.scss';
 
   .project-card {
-    background-color: $dark-blue;
-    border-radius: 20px;
+    border: 1px solid #302f41;  
+    //border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 20%;
-    img {
-      border-radius: 20px 20px 0 0;
-      width: 100%;
+    width: calc(33.33% - 10px);
+    .project-img {
+
+      img {
+        filter: brightness(85%);
+        width: 100%;
+      }
     }
+    
     .card-info {
+      background-image: radial-gradient(circle, #192944, #17243a, #141f30, #121a26, #10151d);
+      border-radius: 0 0 20px 20px;
       padding: 1rem 1rem 1.5rem 1rem;
       height: 9rem;
       h3 {
@@ -63,6 +69,7 @@ const { image, title, description, repoUrl, websiteUrl } = Astro.props
           font-weight: 600;
         }
         .code {
+          font-weight: 400;
           color: #17B877;
           background-color: #166646;
           &:hover {
@@ -70,6 +77,7 @@ const { image, title, description, repoUrl, websiteUrl } = Astro.props
           }
         }
         .website {
+          font-weight: 400;
           background-color: #503b7a;
           color: #a87ffb;
           &:hover {

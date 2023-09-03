@@ -1,0 +1,15 @@
+<div class="experience">
+  <slot/>
+</div>
+
+<style lang="scss" scoped>
+  @import '../styles/_variables.scss';
+  .experience {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+    position: relative;
+  }
+</style>

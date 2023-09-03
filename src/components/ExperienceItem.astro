@@ -1,0 +1,67 @@
+---
+import type { expItem } from "../types/types";
+interface Props extends expItem {};
+const { title, position, description, location, date } = Astro.props;
+---
+
+<div class="experience-card">
+  <div class="card-meta-info">
+    <div class="flex-info-left">
+      <h4>{title}</h4>
+      <span>{position}</span>
+    </div>
+    <div class="flex-info-right">
+      <span>{location}</span>
+      <span>{date}</span>
+    </div>
+  </div>
+  <div class="card-description">
+    <ul>
+      {description.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<style lang="scss" scoped>
+  @import '../styles/_variables.scss';
+  .experience-card {
+    box-shadow: 0 0 0 2px #FFC26E, 8px 8px 0 0 #FFC26E;
+    border-radius: 15px;
+    padding: 1.5rem;
+    color: $violet;
+    background-image: radial-gradient(circle, #192944, #17243a, #141f30, #121a26, #10151d);
+    //background-color: #ECF3FE;
+    font-size: 1.3rem;
+
+    .card-meta-info {
+      display: flex;
+      justify-content: space-between;
+      .flex-info-left {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        h4 {
+          color: $orange;
+        }
+        span {
+          font-size: 1.2rem;
+        }
+      }
+      .flex-info-right {
+        &:nth-child(2) {
+          color: $orange;
+          font-size: 1rem;
+          font-style: italic;
+        }
+      }
+    }
+    .card-description {
+      color: #BED5E9;
+      ul > li {
+        line-height: 2rem;
+      }
+    }
+  }
+</style>

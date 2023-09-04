@@ -1,6 +1,6 @@
-import type { expItem } from "../types/types";
+import type { ExpItem } from "../types/types";
 
-const expItems : expItem[] = [
+const expItems : ExpItem[] = [
   {
     title: 'Algorithmics Metepec - Sample Classes Website',
     position: 'Web Developer',

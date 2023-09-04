@@ -23,6 +23,11 @@ import projectsItems from "../data/ProjectsItems";
       projectsItems.map(item => <ProjectCard {...item} />)
     }
   </ProjectsView>
+  <div class="arrow-down-container">
+    <a href="#experience">
+      <img id="arrow-down" src="/assets/icons/arrow-down.svg" alt="Arrow down icon">
+    </a>
+  </div>
 </section>
 
 <style lang="scss" scoped>
@@ -67,6 +72,18 @@ import projectsItems from "../data/ProjectsItems";
         padding-left: 19.3%;
         font-size: 1.2rem;
       }
+    }
+    .arrow-down-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8rem;
+      a {
+        #arrow-down {
+          width: 90px;
+          height: 90px;
+        }
+      } 
     }
   }
   .light-effect {

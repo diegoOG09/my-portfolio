@@ -1,0 +1,69 @@
+---
+import EducationView from "./EducationView.astro";
+import EducationItem from "./EducationItem.astro";
+import educationItems from "../data/EducationItems";
+---
+
+<section class="container" id="education">
+  <div class="experience-card">
+    <div class="exp-header">
+      <img src="/assets/icons/telescope-education.svg" alt="">
+      <h2>Education</h2>
+    </div>
+    <EducationView>
+      {
+        educationItems.map(item => <EducationItem {...item} />)
+      }
+    </EducationView>
+  </div>
+  <div class="arrow-down-container">
+    <a href="#footer">
+      <img id="arrow-down" src="/assets/icons/arrow-down.svg" alt="Arrow down icon">
+    </a>
+  </div>
+</section>
+
+<style lang="scss" scoped>
+  @import '../styles/_variables.scss';
+  #education {
+    margin-top: 8rem;
+    color: $gray;
+    
+    .exp-header {
+      background-image: radial-gradient(circle, #192944, #17243a, #141f30, #121a26, #10151d);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #302f41;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      padding: 4rem;
+      img {
+        width: 50%;
+      }
+      h2 {
+        font-weight: 400;
+        color: white;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        text-shadow: 0 0 5px #80D6FA, 0 0 10px #80D6FA, 0 0 20px #80D6FA, 0 0 30px #80D6FA;
+      }
+    }
+    .experience-card {
+      margin: 0 auto;
+      width: 67%;
+    }
+    .arrow-down-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8rem;
+      a {
+        #arrow-down {
+          width: 90px;
+          height: 90px;
+        }
+      } 
+    }
+  }
+</style>

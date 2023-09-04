@@ -1,0 +1,16 @@
+<div class="education">
+  <slot/>
+</div>
+
+<style lang="scss" scoped>
+  @import '../styles/_variables.scss';
+  .education {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 10rem;
+  }
+</style>

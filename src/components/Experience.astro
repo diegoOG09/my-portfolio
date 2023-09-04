@@ -1,7 +1,7 @@
 ---
 import ExperienceView from "./ExperienceView.astro";
 import ExperienceItem from "./ExperienceItem.astro";
-import expItems from "../data/expItems";
+import expItems from "../data/ExpItems";
 ---
 
 <section class="container" id="experience">
@@ -15,6 +15,11 @@ import expItems from "../data/expItems";
         expItems.map(item => <ExperienceItem {...item} />)
       }
     </ExperienceView>
+  </div>
+  <div class="arrow-down-container">
+    <a href="#education">
+      <img id="arrow-down" src="/assets/icons/arrow-down.svg" alt="Arrow down icon">
+    </a>
   </div>
 </section>
 
@@ -45,6 +50,18 @@ import expItems from "../data/expItems";
     .experience-card {
       margin: 0 auto;
       width: 67%;
+    }
+    .arrow-down-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8rem;
+      a {
+        #arrow-down {
+          width: 90px;
+          height: 90px;
+        }
+      } 
     }
   }
 </style>

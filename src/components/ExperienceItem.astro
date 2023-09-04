@@ -1,6 +1,6 @@
 ---
-import type { expItem } from "../types/types";
-interface Props extends expItem {};
+import type { ExpItem } from "../types/types";
+interface Props extends ExpItem {};
 const { title, position, description, location, date } = Astro.props;
 ---
 
@@ -24,7 +24,7 @@ const { title, position, description, location, date } = Astro.props;
   </div>
 </div>
 
-<style lang="scss" scoped>
+<style lang="scss" >
   @import '../styles/_variables.scss';
   .experience-card {
     box-shadow: 0 0 0 2px #FFC26E, 8px 8px 0 0 #FFC26E;

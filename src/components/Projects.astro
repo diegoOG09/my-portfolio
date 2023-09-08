@@ -115,4 +115,32 @@ import projectsItems from "../data/ProjectsItems";
         opacity: 0.5;
     }
   }
+
+  @media only screen and (max-width: 428px) {
+    #projects {
+      .section-title {
+        .neon-circle {
+          width: 100vw;
+          height: 200%;
+          .neon-beam {
+            width: 100%;
+            left: -5%;
+            top: -4%;
+          }
+          #rocket {
+            width: 50%;
+            top: 5%;
+            left: 45%;
+          }
+        }
+      }
+
+      .title {
+        padding-top: 13rem;
+        p {
+          padding-left: 0;
+        }
+      }
+    }
+  }
 </style>

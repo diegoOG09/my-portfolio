@@ -87,4 +87,21 @@ const { image, title, description, repoUrl, websiteUrl } = Astro.props
       }
     }
   }
+
+  @media only screen and (max-width: 428px) {
+    .project-card {
+      width: 100%;
+      .project-img {
+        img {
+          width: 100%;
+        }
+      }
+
+      &:nth-child(4) {
+        .card-info > p {
+          height: 7rem;
+        }
+      }
+    }
+  }
 </style>

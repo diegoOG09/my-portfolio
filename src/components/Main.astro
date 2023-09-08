@@ -27,6 +27,7 @@
           <img src="/assets/icons/css.svg" alt="CSS icon">
           <img src="/assets/icons/html.svg" alt="HTML icon">
           <img src="/assets/icons/sass.svg" alt="SASS icon">
+          <img src="/assets/icons/figma.svg" alt="Figma icon">
           <img src="/assets/icons/firebase.svg" alt="Firebase icon">
           <img src="/assets/icons/sql.svg" alt="SQL icon">
           <img src="/assets/icons/python.svg" alt="Python icon">
@@ -187,6 +188,85 @@
           height: 90px;
         }
       } 
+    }
+  }
+
+  @media only screen and (max-width: 428px) {
+    main {
+      h1 {
+        margin: 1.5rem 0 0 0;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        span {
+          color: $green;
+        }
+        .major {
+          font-size: 3rem;
+          font-weight: 400;
+        }
+        .minus {
+          margin-left: -1.3rem;
+          font-size: 3rem;
+        }
+        .slash {
+          font-size: 2.5rem;
+          font-weight: 400;
+        }
+      }
+
+      .meta-info {
+        margin-bottom: 4rem;
+        flex-direction: column;
+        .rol {
+          font-size: 1rem;
+        }
+        .status {
+          font-size: .8rem;
+        }
+      }
+
+      .personal-info {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 20%;
+        width: 90%;
+        .info {
+          margin-bottom: 2rem;
+          gap: 1rem;
+          h2 {
+            text-align: center;
+            font-size: 1.5rem;
+          }
+          .info-text {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+        .icons {
+          display: flex;
+          flex-direction: row;
+          .contact > p {
+            font-size: 1.3rem;
+          }
+          .stack > p {
+            font-size: 1.3rem;
+          }
+        }
+      }
+
+      .arrow-down-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+        a {
+          #arrow-down {
+            width: 90px;
+            height: 90px;
+          }
+        } 
+      }
     }
   }
 </style>

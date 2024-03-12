@@ -6,7 +6,7 @@ const projectsItems : ProjectItem[] = [
     title: 'Algorithmics Landing Page',
     description: 'Landing page for Algorithmics. Users will find information about the school and available courses.',
     repoUrl: 'https://github.com/diegoOG09/algorithmics-landing-web',
-    websiteUrl: 'https://algorithmics-landing-page.netlify.app'
+    websiteUrl: 'https://algorithmicsmetepec.com.mx/index.html'
   },
   {
     image: '/assets/screenshots/algo-lessons-website.png',

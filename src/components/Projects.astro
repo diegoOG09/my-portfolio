@@ -6,17 +6,12 @@ import projectsItems from "../data/ProjectsItems";
 
 <section class="container" id="projects">
   <div class="section-title">
-    <div class="neon-circle">
-      <div class="neon-beam"></div>
-      <img id="rocket" src="/assets/icons/rocket-2.svg" alt="">
+    <div class="neon-circle">      <img id="rocket" src="/assets/icons/rocket-2.svg" alt="">
     </div>
   </div>
   <div class="title">
     <h2>Projects</h2>
     <p>Some projects I have done.</p>
-  </div>
-  <div class="light-effect">
-    <div class="light-beam"></div>
   </div>
   <ProjectsView>
     {
@@ -40,16 +35,7 @@ import projectsItems from "../data/ProjectsItems";
         z-index: 1;
         width: 100vw;
         height: 200%;
-        .neon-beam {
-          width: 20%;
-          height: 20%;
-          background: radial-gradient(ellipse at center, rgb(168, 127, 251) 5%, rgba(168, 127, 251, 0) 50%);
-          border-radius: 50%;
-          position: relative;
-          top: -2%;
-          left: 20%;
-          transform: rotate(45deg);
-        }
+        
         #rocket {
           width: 10%;
           position: absolute;
@@ -86,23 +72,6 @@ import projectsItems from "../data/ProjectsItems";
       } 
     }
   }
-  .light-effect {
-    width: 100vw;
-    height: 200%;
-    position: absolute;
-    z-index: -1;
-  }
-  .light-beam {
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at center, rgb(25, 41, 68) 5%, rgba(25, 41, 68, 0) 50%);
-    border-radius: 50%;
-    position: relative;
-    top: -50%;
-    left: -3.5%;
-    transform: rotate(45deg);
-    animation: flicker 10s infinite;
-  }
   
   @keyframes flicker {
     0%, 100% {
@@ -122,11 +91,6 @@ import projectsItems from "../data/ProjectsItems";
         .neon-circle {
           width: 100vw;
           height: 200%;
-          .neon-beam {
-            width: 100%;
-            left: -5%;
-            top: -4%;
-          }
           #rocket {
             width: 50%;
             top: 5%;

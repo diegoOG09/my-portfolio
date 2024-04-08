@@ -104,7 +104,7 @@ const { image, title, description, repoUrl, websiteUrl } = Astro.props
     }
   }
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 600px) {
     .project-card {
       width: 100%;
       .project-img {
@@ -116,6 +116,12 @@ const { image, title, description, repoUrl, websiteUrl } = Astro.props
       &:nth-child(4) {
         .card-info > p {
           height: 7rem;
+        }
+      }
+      .card-info {
+        p{
+          font-size: .9rem;
+          width: 90%;
         }
       }
     }

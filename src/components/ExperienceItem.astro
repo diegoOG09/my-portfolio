@@ -64,4 +64,24 @@ const { title, position, description, location, date } = Astro.props;
       }
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    .experience-card {
+      .card-meta-info {
+        .flex-info-left {
+          h4 {
+            font-size: 1.1rem;
+          }
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+      .card-description {
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 </style>

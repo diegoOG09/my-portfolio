@@ -7,7 +7,7 @@ import educationItems from "../data/EducationItems";
 <section class="container" id="education">
   <div class="experience-card">
     <div class="exp-header">
-      <img src="/assets/icons/telescope-education.svg" alt="">
+      <img src="/assets/icons/educationv2.svg" alt="">
       <h2>Education</h2>
     </div>
     <EducationView>
@@ -15,11 +15,6 @@ import educationItems from "../data/EducationItems";
         educationItems.map(item => <EducationItem {...item} />)
       }
     </EducationView>
-  </div>
-  <div class="arrow-down-container">
-    <a href="#footer">
-      <img id="arrow-down" src="/assets/icons/arrow-down.svg" alt="Arrow down icon">
-    </a>
   </div>
 </section>
 
@@ -33,19 +28,27 @@ import educationItems from "../data/EducationItems";
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid #302f41;
-      border-radius: 8px;
+      flex-direction: column;
+      gap: 1rem;
       margin-bottom: 2rem;
-      padding: 4rem;
       img {
-        width: 50%;
+        width: 15%;
+        filter: drop-shadow(5px 5px 5px #253141);
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+        &:hover {
+          filter: grayscale(0%);
+        }
       }
       h2 {
-        font-weight: 400;
-        color: white;
-        text-transform: uppercase;
+        font-weight: 700;
+        color: $black;
         font-size: 3.5rem;
-        text-shadow: 0 0 5px #80D6FA, 0 0 10px #80D6FA, 0 0 20px #80D6FA, 0 0 30px #80D6FA;
+      }
+      p {
+        color: $gray-text;
+        padding-left: 3.3%;
+        font-size: 1.2rem;
       }
     }
     .experience-card {

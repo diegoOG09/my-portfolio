@@ -8,11 +8,13 @@ const { title, career, location, date } = Astro.props;
   <div class="card-meta-info">
     <div class="flex-info-left">
       <h4>{title}</h4>
-      <span>{career}</span>
+      <div>
+        <span>{location}</span>
+        <span>{date}</span>
+      </div>
     </div>
     <div class="flex-info-right">
-      <span>{location}</span>
-      <span>{date}</span>
+      <span>{career}</span>
     </div>
   </div>
 </div>
@@ -20,37 +22,40 @@ const { title, career, location, date } = Astro.props;
 <style lang="scss" >
   @import '../styles/_variables.scss';
   .experience-card {
-    box-shadow: 0 0 0 2px #80D6FA, 8px 8px 0 0 #80D6FA;
+    border: 1px solid $black;
     border-radius: 15px;
-    padding: 1.5rem;
-    color: $violet;
+    color: $black;
     font-size: 1.3rem;
 
     .card-meta-info {
-      display: flex;
-      justify-content: space-between;
       .flex-info-left {
         display: flex;
-        flex-direction: column;
-        gap: .5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid $black;
+        padding: 1.5rem;
         h4 {
-          color: $blue;
+          color: $black;
         }
         span {
           font-size: 1.2rem;
-          color: $orange;
         }
       }
       .flex-info-right {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: .5rem;
+        span {
+          font-size: 1.2rem;
+        }
         &:nth-child(2) {
-          color: $blue;
+          color: $black;
           font-size: 1rem;
           font-style: italic;
         }
+      }
+    }
+    .card-description {
+      color: $black;
+      ul > li {
+        line-height: 2rem;
       }
     }
   }

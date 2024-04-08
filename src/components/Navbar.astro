@@ -1,6 +1,6 @@
 <header id="header" class="container">
   <nav>
-    <a target="_blank" href="/docs/CV_español_Diego_Salinas.pdf">Download CV <span class="arrow">↯</span></a>
+    <a target="_blank" href="/docs/CV_español_Diego_Salinas.pdf">Download CV <span class="arrow"><i class="fa-solid fa-floppy-disk"></i></span></a>
   </nav>
 </header>
 
@@ -14,9 +14,9 @@
       margin: 2.5rem 0 0 0;
       a {
         display: inline-block;
-        background-color: $violet;
+        background-color: $black;
         text-decoration: none;
-        color: $black;
+        color: #fbf5eb;
         padding: 1.4rem 2rem;
         border-radius: 99px;
         font-size: 1.1rem;
@@ -26,11 +26,14 @@
           margin-left: .4rem;
         }
         &:hover {
+          color: #222222;
           background-color: white;
-          outline: 1px solid $violet;
+          // outline: 1px solid $violet;
+          outline: 1px solid $black;
           transition: .5s;
           .arrow {
-            color: $violet;
+            // color: $violet;
+            color: $black;
             font-weight: 700;
             transform: translateY(5px);
             transition: transform 0.3s ease;

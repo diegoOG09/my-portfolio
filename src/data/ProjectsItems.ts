@@ -13,7 +13,7 @@ const projectsItems : ProjectItem[] = [
     title: 'Algorithmics Sample Classes',
     description: 'Algorithmics website to schedule sample classes. The child(\')s parents can schedule a sample class to meet the teachers and the course.',
     repoUrl: 'https://github.com/diegoOG09/algorithmics-landing-page',
-    websiteUrl: 'https://algorithmics-sample-classes.netlify.app'
+    websiteUrl: 'https://clases-algorithmics.netlify.app/'
   },
   {
     image: '/assets/screenshots/analyze-this.png',

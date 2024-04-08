@@ -7,8 +7,11 @@ import expItems from "../data/expItems";
 <section class="container" id="experience">
   <div class="experience-card">
     <div class="exp-header">
-      <img src="/assets/icons/rocket-exp.svg" alt="">
-      <h2>Experience</h2>
+      <img id="experience-img" src="/assets/icons/rocket-exp.svg" alt="">
+      <div>
+        <h2>Experience</h2>
+        <p>My real experience.</p>
+      </div>
     </div>
     <ExperienceView>
       {
@@ -28,22 +31,31 @@ import expItems from "../data/expItems";
   #experience {
     margin-top: 8rem;
     color: $gray;
-    
     .exp-header {
       display: flex;
       align-items: center;
-      border: 1px solid #302f41;
-      border-radius: 8px;
-      margin-bottom: 2rem;
+      justify-content: center;
+      flex-direction: row-reverse;
+      gap: 2rem;
+      margin-bottom: 4rem;
       img {
-        width: 60%;
+        width: 10%;
+        filter: drop-shadow(5px 5px 5px #253141);
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+        &:hover {
+          filter: grayscale(0%);
+        }
       }
       h2 {
-        font-weight: 400;
-        color: white;
-        text-transform: uppercase;
+        font-weight: 700;
+        color: $black;
         font-size: 3.5rem;
-        text-shadow: 0 0 5px #FFC26E, 0 0 10px #FFC26E, 0 0 20px #FFC26E, 0 0 30px #FFC26E;
+      }
+      p {
+        color: $gray-text;
+        padding-left: 3.3%;
+        font-size: 1.2rem;
       }
     }
     .experience-card {

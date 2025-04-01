@@ -5,7 +5,7 @@ const educationItems : EducationItem[] = [
     title: 'Universidad Virtual del Estado de Guanjuato',
     career: 'Engineering Information Technology Management',
     location: 'Guanajuato,  México',
-    date: '2021-2023'
+    date: '2021-2025'
   },
   {
     title: 'Scrum Fundamentals Certified',

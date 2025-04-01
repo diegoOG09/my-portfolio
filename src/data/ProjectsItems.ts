@@ -16,33 +16,19 @@ const projectsItems : ProjectItem[] = [
     websiteUrl: 'https://clases-algorithmics.netlify.app/'
   },
   {
-    image: '/assets/screenshots/analyze-this.png',
-    title: 'Analyze This',
-    description: 'Web tool for analyze text, number of words, palindromes, etc. ',
-    repoUrl: 'https://github.com/diegoOG09/analyze-this',
-    websiteUrl: 'https://analyze-this.netlify.app/'
+    image: '/assets/screenshots/bootcamp.png',
+    title: 'Bootcamp Daimler',
+    description: 'Website for the Bootcamp event, facilitating user registration and awards management.',
+    repoUrl: '',
+    websiteUrl: 'https://bootcampd.netlify.app/'
   },
   {
-    image: '/assets/screenshots/viajes-bernal.png',
+    image: '/assets/screenshots/viajesbernal.png',
     title: 'Viajes Bernal',
     description: 'Travel website where users can view upcoming and past trips. It also has an administration panel for those administrators who are logged in. They can create, delete and modify trips.',
     repoUrl: 'https://github.com/diegoOG09/travels',
     websiteUrl: 'https://viajes-bernal.netlify.app/'
   },
-  {
-    image: '/assets/screenshots/vue-poke-app.png',
-    title: 'Vue Pokemon App',
-    description: 'Guess the pokemon game',
-    repoUrl: 'https://github.com/diegoOG09/vue-pokeApi',
-    websiteUrl: 'https://vue-poke-apimon.netlify.app/'
-  },
-  {
-    image: '/assets/screenshots/yes-no-app.png',
-    title: 'Yes/No App',
-    description: 'An app that responds Yes or No to a question',
-    repoUrl: '',
-    websiteUrl: 'https://playful-flan-aba5cd.netlify.app/'
-  }
 ]
 
 export default projectsItems;

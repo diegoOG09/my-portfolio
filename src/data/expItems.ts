@@ -2,6 +2,17 @@ import type { ExpItem } from "../types/types";
 
 const expItems : ExpItem[] = [
   {
+    title: 'Bootcamp Daimler Truck Mexico',
+    position: 'Web Developer',
+    description: [
+      "I designed and programmed a website for the Bootcamp event, facilitating user registration and awards management.",
+      "Built a responsive design in Figma.",
+      "Created a database in Firebase and connected it to the application."
+    ],
+    location: "Metepec, Estado de Mexico",
+    date: "2023"
+  },
+  {
     title: 'Algorithmics Metepec - Sample Classes Website',
     position: 'Web Developer',
     description: [
